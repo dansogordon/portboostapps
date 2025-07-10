@@ -2189,6 +2189,8 @@ padding: 40px 50px 30px 40px; /* top right bottom left */
   padding: 60px 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
   z-index: 1;
+  min-height: 300px;
+ 
 }
 
 .about-section::after {
