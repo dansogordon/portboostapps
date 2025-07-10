@@ -250,26 +250,42 @@ audio {
 
 .modal-close {
   position: absolute;
-  top: 5px;
-  right: 10px;
-  font-size: 30px;
+  top: 10px;
+  right: 15px;
+  font-size: 36px;
   color: white;
   cursor: pointer;
-}
+  z-index: 10000;
 
+  /* 🔥 This increases the click zone */
+  padding: 20px;               /* expand the hit area */
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Optional for visibility: */
+  background-color: rgba(255, 255, 255, 0.05); /* or transparent */
+  border-radius: 50%;
+}
 /* make the X sit on top of everything */
 .video-close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
-  z-index: 999;           /* above video controls */
+  z-index: 99999;           /* above video controls */
   background: none;
   border: none;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1;
   color: white;
   cursor: pointer;
-  padding: 4px;
+  padding: 10px 20px;
+  
+}
+.modal-close:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
 }
 
 /* on mobile push it further left so it doesn’t overlap the volume button */
@@ -362,21 +378,21 @@ display: block;
 }
 
 .media-pill {
+  position: absolute;
+  bottom: 0px; /* or a small positive number */
+  left: 0px;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 10px 10px;
   gap: 8px;
   background: #000000;
   border-radius: 0px;
   font-size: 13px;
   color: #fff;
-  line-height: 1;
   white-space: nowrap;
-  height: auto;
-  width: 500px; /* was 190px */
- 
+  width: 500px;
 }
-
 
 .pill-text {
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -531,7 +547,7 @@ display: block;
   
 }
 .portfolio-section-odd {
-
+min-height: 900px;
  display: flex;
     flex-direction: column;
     align-items: center;
@@ -540,6 +556,8 @@ display: block;
     text-align: center;
   
     overflow: hidden;
+    outline: 2px dashed rgb(207, 210, 23) !important;   
+    
     
   
 }
@@ -601,6 +619,7 @@ display: block;
   .pill-group-tools {
     justify-content: center;
     flex-wrap: wrap;
+     
   }
 
   .pill {
@@ -945,6 +964,7 @@ max-width: 500px;
   .pill-group-tools {
     margin-top: 8px;
     margin-bottom: 4px;
+     outline: 2px dashed rgb(23, 23, 210) !important;   
    
   }
 
@@ -2161,7 +2181,7 @@ padding: 40px 50px 30px 40px; /* top right bottom left */
 /* ABOUT US */
 .about-section {
   position: relative; /* This is required for ::after to work correctly */
- background-image: url('../img/AboutUsBackground.png'); /* Adjust path if needed */
+ background-image: url('img/AboutUSBackground3.png'); /* Adjust path if needed */
   background-size: cover;
   background-size: cover;
   background-position: center;

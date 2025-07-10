@@ -346,7 +346,7 @@
                 border: none;
                 outline: none;
               ">
-                 <source src="img/Audio.mp3" type="audio/mpeg" />
+                 <source src="img/Website_audio.mp3" type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
             </div>
@@ -1134,14 +1134,15 @@ All UX, UI, branding, and the concept trailer shown here were crafted by Danso G
     Your browser does not support the video tag.
   </video>
   
-  <!-- your media pill… -->
-  <div class="media-pill">…</div>
+  <!-- 👇 MOVED MEDIA PILL INSIDE VIDEO WRAPPER -->
+  <div class="media-pill">
+    <span class="pill-text">Concept Trailer</span>
+    <span class="pill-icon"></span>
+  </div>
   
-  <!-- the dark overlay -->
-  <div class="video-overlay"><button class="video-close-btn" aria-label="Close video">×</button></div>
-  
-
+  <div class="video-overlay"></div>
 </div>
+
 
 
   </div>
@@ -2034,25 +2035,38 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <script>
-  document.querySelector('.video-overlay').addEventListener('click', () => {
-  // Hide video or pause, however you're handling it
-});
-  document.addEventListener('DOMContentLoaded', () => {
-    const wrapper = document.querySelector('.video-wrapper');
-    const video = wrapper.querySelector('video');
-    const overlay = wrapper.querySelector('.video-overlay');
-    const closeBtn = wrapper.querySelector('.video-close-btn');
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('video-modal');
+  const modalVideo = document.getElementById('modal-video');
+  const modalClose = document.querySelector('.modal-close');
 
-    // your existing "open overlay" code probably shows overlay and plays video…
-    // now add the close logic:
-    closeBtn.addEventListener('click', () => {
-      video.pause();
-      overlay.style.display = 'none';
-      closeBtn.style.display = 'none';
-      // if you blanked out the video src, reset it here instead:
-      // video.src = video.src;
+  document.querySelectorAll('.video-wrapper').forEach(wrapper => {
+    const smallVideo = wrapper.querySelector('video');
+    const overlay = wrapper.querySelector('.video-overlay');
+
+    wrapper.addEventListener('click', (e) => {
+      if (e.target.closest('.video-close-btn')) return; // ignore clicks on the close button
+      e.preventDefault();
+
+      // Pause the inline video
+      smallVideo.pause();
+
+      // Set modal video source to match small video
+      const source = smallVideo.querySelector('source').src;
+      modalVideo.querySelector('source').src = source;
+      modalVideo.load(); // reload the video with the new source
+      modal.style.display = 'flex';
+      modalVideo.play();
     });
   });
+
+  modalClose.addEventListener('click', () => {
+    modalVideo.pause();
+    modal.style.display = 'none';
+    modalVideo.querySelector('source').src = '';
+    modalVideo.load(); // Clear the video
+  });
+});
 </script>
 
 <!-- 🔥 Fullscreen Video Modal -->
