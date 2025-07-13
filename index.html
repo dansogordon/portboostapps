@@ -2069,6 +2069,17 @@ document.addEventListener('DOMContentLoaded', () => {
     modalVideo.load(); // Clear the video
   });
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+  const hash = window.location.hash;
+  if (hash) {
+    const target = document.querySelector(hash);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      history.replaceState(null, null, " "); // removes #about from URL
+    }
+  }
+});
 </script>
 
 <!-- 🔥 Fullscreen Video Modal -->
