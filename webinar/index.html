@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Build Your App the Right Way Webinar | Portboost Apps</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free Website Template" name="keywords">
+  <meta content="Free Website Template" name="description">
+
+  <link rel="stylesheet" href="../styles.css?v=2">
+  <link rel="preload" as="image" href="../img/webinar_image_4.png">
+  <link href="../img/favicon.ico" rel="icon">
+
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+  <link href="../css/style.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    @font-face {
+      font-family: 'Century Gothic';
+      src: url('https://static.canva.com/webfonts/CenturyGothic-Regular.woff2') format('woff2');
+      font-weight: 700;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body style="background-color: #000;">
+
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0 nav-bar">
+    <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+      <a href="../index.html" class="navbar-brand px-lg-4 m-0">
+        <div class="logo">
+          <img src="../img/Logo.png" class="carousel-img" alt="Logo">
+        </div>
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto p-4">
+          <a href="../index.html" class="nav-item nav-link">Home</a>
+          <a href="../index.html#about" class="nav-item nav-link">About</a>
+          <a href="../index.html#method" class="nav-item nav-link">Method</a>
+          <a href="../index.html#portfolio" class="nav-item nav-link">Experience</a>
+          <a href="../index.html#testimonial" class="nav-item nav-link">Testimonial</a>
+          <a href="../index.html#contact" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+  <div class="main-content">
+    <div class="webinar-container">
+
+      <div class="webinar-left">
+        <div class="headline-section">
+          <h1 class="headline-text">Do you have the next million-dollar app idea?</h1>
+        </div>
+
+        <div class="subhead-section">
+          <p class="subhead-text">Don't gamble with your idea. <br>90% of apps fail - not because they weren't good, but because they didn't use the right strategy.</p>
+        </div>
+
+        <div class="webinar-middle">
+          <img src="../img/Webinar_image5.png" alt="Webinar visual">
+        </div>
+
+        <div class="webinar-bottom">
+          <p class="cta-text">“The competitor insights were clear, practical, and easy to apply. You can tell a ton of effort went into it, the quality is outstanding.”
+            — Myles L., Founder of Mastery</p>
+        </div>
+      </div>
+
+      <div class="webinar-right">
+        <div class="webinar-right-inner">
+          <h2 class="webinar-headline">Free 25-Minute Webinar:<br>Build Your App the Right Way</h2>
+          <p class="webinar-subhead">Learn the process we use to take app ideas from sketch to scale — even if you’re non-technical.</p>
+          <p class="webinar-small-text">Enter your details to unlock access instantly.</p>
+
+          <div class="_form_1"></div>
+          <script src="https://portboostapps.activehosted.com/f/embed.php?id=1" charset="utf-8"></script>
+
+          <div class="webinar-divider">
+            <div class="line"></div>
+            <img src="../img/play-circle 1.png" alt="Play" class="play-icon" />
+            <div class="line"></div>
+          </div>
+
+          <div class="webinar-bullets">
+            <p><strong>✅</strong> Learn how to avoid app money traps</p>
+            <p><strong>✅</strong> Discover the 4 stages of app development</p>
+            <p><strong>✅</strong> Get access to our free app launch roadmap</p>
+          </div>
+
+          <img src="../img/Visionaires pic.png" alt="tag line" class="signup-image" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.style.visibility = 'visible';
+    });
+  </script>
+
+  <script>
+    const checkForThankYou = () => {
+      const thankYouDiv = document.querySelector('._form-thank-you');
+      if (thankYouDiv && thankYouDiv.textContent.includes('Thanks for signing up!')) {
+        window.location.href = '../thankyou/';
+      }
+    };
+    setInterval(checkForThankYou, 500);
+  </script>
+
+  <script>
+    document.querySelectorAll('a.nav-item.nav-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').split('#')[1];
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          window.location.href = this.getAttribute('href');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

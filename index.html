@@ -1941,7 +1941,7 @@ window.addEventListener('mouseup', () => {
   if (currentLeft >= maxTranslate - 5) { // allow slight slack
     swipeIcon.style.left = maxTranslate + 'px';
     setTimeout(() => {
-      window.location.href = 'webinar.html';
+      window.location.href = '/webinar/';
     }, 100); // optional delay for smoother feel
   } else {
     swipeIcon.style.left = '0px';
@@ -1971,7 +1971,7 @@ swipeIcon.addEventListener('touchend', () => {
   if (currentLeft >= maxTranslate - 5) {
     swipeIcon.style.left = maxTranslate + 'px';
     setTimeout(() => {
-      window.location.href = 'webinar.html';
+      window.location.href = '/webinar/';
     }, 100);
   } else {
     swipeIcon.style.left = '0px';
@@ -2080,4 +2080,6 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
 </div>
 
+
+</body>
 </html>
