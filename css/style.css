@@ -1,4 +1,5 @@
-/******* Bootstrap Theming ********/
+
+ /******* Bootstrap Theming ********/
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -12639,7 +12640,7 @@ display: block !important;
   word-break: break-word;
   justify-content: center;
 
-  outline: 10px dashed rgb(55, 255, 0) !important;
+
     
   }
   .webinar-left,
