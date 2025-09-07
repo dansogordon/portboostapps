@@ -47,6 +47,18 @@ html, body {
   --font-family-sans-serif: "Montserrat", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+
+.space {
+    margin-top: 50px;
+    text-align: center;
+  
+}
+
+.space a {
+    display: inline-block;
+    padding-top: 50px; /* actual visual space above the button */
+}
+
 /* Full section container with background image */
 .dream-section {
   position: relative;
