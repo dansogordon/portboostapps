@@ -64,7 +64,7 @@ html, body {
   position: relative;
   width: 100%;
   height: 700px;
-  background: url('img/Dream\ Section\ \(1\).png');
+  background: url('img/background_people.png');
   background-size: 110%;            /* zoom in */
   background-position: center 90%;  /* shift image up */
   background-repeat: no-repeat;
@@ -931,7 +931,7 @@ max-width: 500px;
     max-width: 500px;
   }
 
-  
+
 
   /* Make mockup smaller + tighten its container */
   .mockup-slider {
