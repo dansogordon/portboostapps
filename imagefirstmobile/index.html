@@ -56,6 +56,50 @@
 <section class="services py-5 py-lg-11 py-xl-12 bg-dark" id="services">
   <div class="container">
     <div class="row align-items-center">
+
+
+<section style="max-width:900px; margin:60px auto; padding:0 20px;">
+
+  <!-- Badge goes HERE -->
+<!-- Booking Badge -->
+<div style="text-align:center; margin-bottom:16px;">
+  <span style="
+    display:inline-block;
+    padding:8px 18px;
+    background:#e63946;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    border-radius:20px;
+    letter-spacing:0.5px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  ">
+    👇 Book Your Free Promo Below
+  </span>
+</div>
+
+
+  <!-- Headline (optional) -->
+  <h2 style="text-align:center; font-weight:700; margin-bottom:10px;">
+    Schedule Your Free Interior Detail
+  </h2>
+<!-- Cal inline embed code begins -->
+<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-60min"></div>
+<script type="text/javascript">
+  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "60min", {origin:"https://app.cal.com"});
+
+  Cal.ns["60min"]("inline", {
+    elementOrSelector:"#my-cal-inline-60min",
+    config: {"layout":"month_view"},
+    calLink: "imagefirstmobile/60min",
+  });
+
+  Cal.ns["60min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+  </script>
+  <!-- Cal inline embed code ends -->
+</section>
+
       
 <!-- Center This -->
 <div class="d-flex align-items-center justify-content-center gap-3 py-2 mobile-margin-fix"
@@ -255,23 +299,6 @@
   }
 </style>
 
-<div style="text-align: center; margin-top: 0px;">
-  <a href="https://www.paypal.com/ncp/payment/YNESHFR5WY97E" class="cta-btn"
-     style="display: inline-block; width: 500px; padding: 18px 0;
-            background: linear-gradient(180deg, #222, #000);
-            color: #fff; font-size: 20px; font-weight: 700; 
-            text-decoration: none; border-radius: 8px;
-            border: 2px solid #d4af37; /* gold border */
-            letter-spacing: 0.5px; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-            transition: all .25s ease;">
-    Reserve My Spot — $750
-  </a>
-    <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" 
-       alt="cards" 
-       style="display: block; margin: 10px auto;" />
-</div>
-        
 
 
 
