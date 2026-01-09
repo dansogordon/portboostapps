@@ -445,6 +445,20 @@ margin-top: 12px;
  
 }
 
+.step-number {
+  width: 72px;       /* equal width & height for perfect circle */
+  height: 72px;
+  border-radius: 50%; /* makes it circular */
+  background-color: #0d6efd; /* matches your primary color */
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;    /* centers it horizontally inside the card */
+}
+
 .the_line {
   width: 250px;
   height: 0;
