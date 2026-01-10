@@ -204,6 +204,47 @@
   justify-content: center;
   margin: 0 auto;    /* centers it horizontally inside the card */
 }
+/* Testimonials Bar */
+.testimonials-bar {
+  background-color: #000;        /* Full black bar */
+  width: 100%;                   /* Full width */
+  padding: 15px 10px;            /* Space around text */
+  box-sizing: border-box;        /* Make padding work with width */
+  text-align: center;            /* Center text */
+}
+
+.testimonials-bar h2,
+.testimonials-bar h3 {
+  font-size: clamp(1rem, 5vw, 2rem); /* Responsive font size */
+  line-height: 1.2;
+  margin: 0;                          /* Remove default margin */
+  color: #fff;
+  word-break: break-word;             /* Prevent overflow on mobile */
+}
+
+.testimonials-bar h2 span,
+.testimonials-bar h3 span {
+  color: #bef472;                     /* Highlighted text */
+}
+
+/* Mobile-specific fix for testimonials bar */
+@media (max-width: 767px) {
+  .testimonials-bar {
+    padding: 15px 10px !important;   /* Add side padding for small screens */
+    text-align: center !important;   /* Center the text */
+  }
+
+  .testimonials-bar h2,
+  .testimonials-bar h3 {
+    font-size: 1.25rem !important;   /* Smaller font for mobile */
+    line-height: 1.3 !important;
+    word-break: break-word !important; /* Prevent text from breaking outside */
+  }
+
+  .testimonials-bar span {
+    display: inline !important;      /* Keep highlighted text inline */
+  }
+}
 
 
 body {
