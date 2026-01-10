@@ -565,20 +565,33 @@ Limited spots available monthly in Atlanta</p>
 </section>
 
 <!-- Full-width Testimonials Bar -->
-<section style="background-color:#000; text-align:center; padding:15px 10px; display:flex; justify-content:center; align-items:center;">
-  <h2 style="color:#fff; font-size:1.5rem; line-height:1.3; margin:0;">
-    50+ Testimonials: <span style="color:#bef472;">Will You Be Next?</span>
-  </h2>
-
-  <style>
-    @media (max-width:767px) {
-      section h2 {
-        font-size: 1.125rem !important; /* 25% smaller for mobile */
-      }
-    }
-  </style>
+<!-- Full-width Testimonials Bar -->
+<section class="testimonials-bar py-3" style="background-color:#000; width:100%;">
+  <div class="container px-2"> <!-- px-2 gives side padding on mobile -->
+    <div class="row">
+      <div class="col">
+        <h2 class="text-white text-center mb-0" style="font-size: clamp(1rem, 4vw, 1.75rem); line-height:1.2;">
+          50+ Testimonials: <span style="color:#bef472;">Will You Be Next?</span>
+        </h2>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Optional Mobile-specific CSS if you need extra tweaks -->
+<style>
+@media (max-width: 767px) {
+  .testimonials-bar h2 {
+    font-size: 1rem !important;        /* smaller font for small screens */
+    line-height: 1.3 !important;
+  }
+
+  .testimonials-bar {
+    padding-top: 1rem !important;      /* smaller top padding */
+    padding-bottom: 1rem !important;   /* smaller bottom padding */
+  }
+}
+</style>
 
 <!-- Testimonials Section -->
 <section class="testimonial py-5 py-lg-11 py-xl-12 bg-dark" >
