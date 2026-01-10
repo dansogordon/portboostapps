@@ -215,7 +215,7 @@
 
 .testimonials-bar h2,
 .testimonials-bar h3 {
-  font-size: clamp(1rem, 5vw, 1rem); /* Responsive font size */
+  font-size: clamp(12px, 5vw, 12px); /* Responsive font size */
   line-height: 1.2;
   margin: 0;                          /* Remove default margin */
   color: #fff;
