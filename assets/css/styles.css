@@ -206,11 +206,11 @@
 }
 /* Testimonials Bar */
 .testimonials-bar {
-  background-color: #000;        /* Full black bar */
-  width: 100%;                   /* Full width */
-  padding: 15px 10px;            /* Space around text */
-  box-sizing: border-box;        /* Make padding work with width */
-  text-align: center;            /* Center text */
+  width: 100vw;                 /* force full viewport width */
+  margin-left: calc(-50vw + 50%); /* break out of any container */
+  background: #000;
+  padding: 24px 16px;
+  text-align: center;
 }
 
 .testimonials-bar h2,
@@ -236,7 +236,7 @@
 
   .testimonials-bar h2,
   .testimonials-bar h3 {
-    font-size: 0.5rem !important;   /* Smaller font for mobile */
+    font-size: 10px !important;   /* Smaller font for mobile */
     line-height: 0.9 !important;
     word-break: break-word !important; /* Prevent text from breaking outside */
   }
@@ -245,7 +245,11 @@
     display: inline !important;      /* Keep highlighted text inline */
   }
 }
-
+@media (max-width: 767px) {
+  .testimonials-bar h2 {
+    font-size: 14px !important;
+  }
+}
 
 body {
   margin: 0;
