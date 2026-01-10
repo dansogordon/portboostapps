@@ -1249,27 +1249,14 @@ padding-top: 10px;            /* ✅ Give it breathing room */
   color: #bef472;                     /* Highlighted text */
 }
 
-/* Mobile-specific fix for testimonials bar */
-@media (max-width: 767px) {
-  .testimonials-bar {
-    padding: 15px 10px !important;   /* Add side padding for small screens */
-    text-align: center !important;   /* Center the text */
-  }
 
-  .testimonials-bar h2,
-  .testimonials-bar h3 {
-    font-size: 10px !important;   /* Smaller font for mobile */
-    line-height: 0.9 !important;
-    word-break: break-word !important; /* Prevent text from breaking outside */
-  }
 
-  .testimonials-bar span {
-    display: inline !important;      /* Keep highlighted text inline */
-  }
-}
 @media (max-width: 767px) {
   .testimonials-bar h2 {
-    font-size: 14px !important;
+    font-size: 1.125rem !important; /* 25% smaller than 1.5rem */
+  }
+  .testimonials-bar {
+    padding: 20px 10px !important; /* keeps bar behind text */
   }
 }
 
