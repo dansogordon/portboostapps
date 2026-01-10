@@ -236,7 +236,7 @@
 
   .testimonials-bar h2,
   .testimonials-bar h3 {
-    font-size: 0.94rem !important;   /* Smaller font for mobile */
+    font-size: 0.5rem !important;   /* Smaller font for mobile */
     line-height: 0.9 !important;
     word-break: break-word !important; /* Prevent text from breaking outside */
   }
