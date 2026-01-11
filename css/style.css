@@ -1226,39 +1226,10 @@ padding-top: 10px;            /* ✅ Give it breathing room */
   display: block;
   max-width: 100%;
 }
-/* Testimonials Bar */
-.testimonials-bar {
-  width: 100vw;                 /* force full viewport width */
-  margin-left: calc(-50vw + 50%); /* break out of any container */
-  background: #000;
-  padding: 24px 16px;
-  text-align: center;
-}
-
-.testimonials-bar h2,
-.testimonials-bar h3 {
-  font-size: clamp(12px, 5vw, 12px); /* Responsive font size */
-  line-height: 1.2;
-  margin: 0;                          /* Remove default margin */
-  color: #fff;
-  word-break: break-word;             /* Prevent overflow on mobile */
-}
-
-.testimonials-bar h2 span,
-.testimonials-bar h3 span {
-  color: #bef472;                     /* Highlighted text */
-}
 
 
 
-@media (max-width: 767px) {
-  .testimonials-bar h2 {
-    font-size: 1.125rem !important; /* 25% smaller than 1.5rem */
-  }
-  .testimonials-bar {
-    padding: 20px 10px !important; /* keeps bar behind text */
-  }
-}
+
 
 .arrow:focus {
   outline: none;
